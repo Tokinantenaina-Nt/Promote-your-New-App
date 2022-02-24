@@ -17,19 +17,15 @@
  header>nav>div {
      text-align: right;
      width: 100%;
-     margin-top: -3em;
+     margin-top: -3%;
      color: #fff;
  }
  
  header nav {
      background: center no-repeat;
-     background-size: 10em;
+     background-size: 25%;
      background-color: #27242b;
-     padding: 4% 10%;
- }
- 
- #logo {
-     padding-top: 2em;
+     padding: 4% 8%;
  }
  
  header>nav>ul>li>a {
@@ -49,8 +45,8 @@
      background: center bottom no-repeat;
      color: #ffffff;
      background-color: #27242b;
-     padding: 0 5% 40%;
-     margin: 0;
+     padding: 0 5% 33%;
+     margin: 0 0 5% 0;
      text-align: center;
  }
  
@@ -83,7 +79,7 @@
  }
  
  .iconSocial img {
-     padding: 0 2%;
+     padding: 0 3%;
  }
  
  p {
@@ -106,7 +102,7 @@
  h5,
  h6 {
      margin: 0;
-     padding: 2.5% 1.5%;
+     padding: 1.5% 1.5%;
  }
  
  .newApp {
@@ -136,7 +132,7 @@
  }
  
  .screenshot {
-     padding: 5% 27%;
+     padding: 0% 27%;
      background-color: #f7f7f7;
  }
  
@@ -177,7 +173,11 @@
  
  footer {
      color: #ababab;
-     padding: 2.5% 10% 0;
+     padding: 2.5% 17% 0;
+ }
+ 
+ footer img {
+     padding: 0 2%;
  }
  
  .copyright p {
