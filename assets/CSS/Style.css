@@ -94,7 +94,7 @@ p {
 }
 
 
-/* CONTENU 1 = CHECK OUR NEW APP  */
+/* CONTENU1 = CHECK OUR NEW APP  */
 
 .grdTitre {
     font-size: x-large;
@@ -125,7 +125,7 @@ h6 {
 }
 
 
-/* BANDE AU MILIEU  */
+/* CONTENU2 = BANDE AU MILIEU  */
 
 #bandeMilieu {
     background-color: #281b38;
@@ -136,7 +136,7 @@ h6 {
 }
 
 
-/* CONTENU 3 = SCREENSHOTS */
+/* CONTENU3 = SCREENSHOTS */
 
 figure {
     text-align: center;
@@ -145,7 +145,7 @@ figure {
 }
 
 .screenshot {
-    padding: 0% 25%;
+    padding: 0% 19%;
     background-color: #f7f7f7;
 }
 
@@ -155,14 +155,13 @@ figure {
 }
 
 
-/* CONTENU 4 */
+/* CONTENU4 */
 
-.litmusTest {
+.container.litmusTest {
     padding: 5% 20%;
-    margin: 0 0;
 }
 
-.litmusTest img {
+.container.litmusTest img {
     padding: 35% 35% 35% 20%;
 }
 
@@ -173,11 +172,11 @@ figure {
     font-size: x-large;
 }
 
-.imageRespons {
+.container.imageRespons {
     padding: 0 21% 3%;
 }
 
-.imageRespons img {
+.container.imageRespons img {
     width: 70%;
 }
 
@@ -186,7 +185,8 @@ figure {
 
 .contact {
     background-color: #f7f7f7;
-    padding: 3% 20%;
+    padding: 3% 17%;
+    margin: 0;
 }
 
 
@@ -205,13 +205,17 @@ footer img {
     padding-top: 0;
 }
 
-@media screen and (max-width: 941px) {
+footer .icon {
+    text-align: right;
+}
+
+@media screen and (max-width: 767px) {
     ul li,
     #getItNow {
         display: none;
     }
     #promoteNewApp {
-        padding: 0 5% 75%;
+        padding: 0 5% 100%;
     }
     .textNewApp {
         text-align: center;
@@ -226,16 +230,23 @@ footer img {
         font-size: large;
     }
     .iconSocial img {
-        padding: 0 0%;
+        padding: 0 1%;
+        width: 10%;
     }
-    .litmusTest {
+    .litmusTest,
+    .row.litmusTest {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
     }
-    .imageRespons p {
+    .container.imageRespons,
+    .row.imageRespons {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
         text-align: center;
-    }
-    .imageRespons {
-        flex-direction: column-reverse !important;
+        align-content: space-around;
     }
     .contact {
         text-align: center;
